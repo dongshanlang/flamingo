@@ -6,7 +6,7 @@ class Singleton
 public:
 	static T& Instance()
 	{
-		//pthread_once(&ponce_, &Singleton::init);
+//		pthread_once(&ponce_, &Singleton::init);
 		if (NULL == value_)
 		{
 			value_ = new T();
@@ -30,6 +30,7 @@ private:
 	static void destroy()
 	{
 		delete value_;
+        value_=nullptr;//add by mxl
 	}
 
 private:
