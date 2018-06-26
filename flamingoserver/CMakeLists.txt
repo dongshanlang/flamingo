@@ -89,6 +89,8 @@ utils/StringUtil.cpp
 
 set(mychatserver_srcs
 chatserversrc/main.cpp
+base/singleton.h
+chatserversrc/Msg.h
 chatserversrc/IMServer.cpp
 chatserversrc/ClientSession.cpp
 chatserversrc/UserManager.cpp
